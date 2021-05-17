@@ -1,0 +1,23 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.sidebar .navbar-collapse {
+  flex-grow: 0.25;
+}
+
+.sidebar .nav-link:hover {
+  color: #c8913d!important;
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    right: auto;
+    bottom: 0;
+    flex-flow: column;
+    min-width: 250px;
+  }
+}

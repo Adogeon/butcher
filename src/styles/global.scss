@@ -1,0 +1,14 @@
+$theme-colors: (
+  "primary": #c8912d,
+  "secondary": #a75227,
+  "info": #1b1918,
+  "success": #71a746,
+  "warning": #ee970e,
+  "danger": #f44336,
+  "dark": #262422,
+  "light": #edeee6,
+);
+
+$nav-link-hover-color: #c8912d;
+
+@import "~bootstrap/scss/bootstrap.scss";
