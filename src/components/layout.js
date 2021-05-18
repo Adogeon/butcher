@@ -6,38 +6,17 @@
  */
 
 import * as React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 
 import MainNav from "./MainNav"
 import "./layout.css"
-import { Container, Row, Col } from "react-bootstrap"
-
-console.log(MainNav)
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
   return (
     <>
       <MainNav />
-      <Container fluid className="bg-dark">
-        <main>{children}</main>
-      </Container>
+      <main class="bg-dark">{children}</main>
     </>
   )
-}
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
 }
 
 export default Layout
