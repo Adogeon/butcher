@@ -2,11 +2,13 @@ main {
   background-color: transparent;
   min-height: 100vh;
   color: #edeee6;
-  padding: 1.5em 0;
+  padding: 1em 0;
+  margin-top: 55px;
 }
 
 @media only screen and (min-width: 768px) {
   main {
     margin-left: 250px;
+    margin-top: 0;
   }
 }
