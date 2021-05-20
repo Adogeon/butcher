@@ -7,7 +7,9 @@ import Header from "../components/Header"
 const AboutPage = () => (
   <Layout>
     <Seo title="About" />
-    <Header>About Us</Header>
+    <Header imageSrc="../../images/SplashGallery/RestaurantFront.jpg">
+      About Us
+    </Header>
     <section className="container-md fs-6 my-3 ">
       <h2>Our Story</h2>
       <article>

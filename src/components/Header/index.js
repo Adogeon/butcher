@@ -1,7 +1,7 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
-const Header = ({ children }) => (
+const Header = ({ children, imageSrc }) => (
   <div style={{ display: "grid" }}>
     {/* You can use a GatsbyImage component if the image is dynamic */}
     <StaticImage
@@ -16,7 +16,7 @@ const Header = ({ children }) => (
       // This is a presentational image, so the alt should be an empty string
       alt=""
       // Assisi, Perúgia, Itália by Bernardo Ferrari, via Unsplash
-      src={"../../images/SplashGallery/RestaurantFront.jpg"}
+      src={imageSrc}
       transformOptions={{
         grayscale: true,
         cropFocus: "top",
