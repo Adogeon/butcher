@@ -2,14 +2,13 @@ import * as React from "react"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Header from "../components/Header"
 
 const AboutPage = () => (
   <Layout>
     <Seo title="About" />
-    <h1 class="my-5 text-center text-primary display-4 fw-bold text-uppercase">
-      About page title
-    </h1>
-    <section class="container-md fs-6 my-3 ">
+    <Header>About Us</Header>
+    <section className="container-md fs-6 my-3 ">
       <h2>Our Story</h2>
       <article>
         The Butcher’s Cut prime steakhouse & seafood opened its doors shortly
@@ -23,9 +22,6 @@ const AboutPage = () => (
         locally-grown vegetables, and an award-winning wine list. These elements
         have combined to provide our guests with a unique culinary experience.
       </article>
-    </section>
-    <section class="container-md fs-6 my-3 ">
-      <h2>Our Menu</h2>
       <article>
         The menu showcases a veritable who’s who of meats in all forms, sourced
         from the very best beef and lamb producers. Quality beef is carefully
@@ -37,9 +33,6 @@ const AboutPage = () => (
         tenderness and flavour that can only come from cattle fed on New
         Zealand’s magnificent grasslands.
       </article>
-    </section>
-    <section class="container-md fs-6 my-3 ">
-      <h2>A Boutique Dining Experience</h2>
       <article>
         Immerse yourself in our vast, sommelier-selected wine collection. Each
         visit to The Butcher’s Cut takes you on a gastronomic adventure that

@@ -14,7 +14,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <MainNav />
-      <main class="bg-dark">{children}</main>
+      <main className="bg-dark">{children}</main>
     </>
   )
 }
