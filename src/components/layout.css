@@ -1,5 +1,8 @@
 main {
   background-color: transparent;
+  min-height: 100vh;
+  color: #edeee6;
+  padding: 1.5em 0;
 }
 
 @media only screen and (min-width: 768px) {

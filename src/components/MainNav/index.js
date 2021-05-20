@@ -6,7 +6,9 @@ import "./MainNav.scss"
 
 const MainNav = () => (
   <Navbar bg="info" variant="dark" expand="md" className={"sidebar"}>
-    <Navbar.Brand as={Link}>Butcher</Navbar.Brand>
+    <Navbar.Brand as={Link} to="/">
+      Butcher
+    </Navbar.Brand>
     <Navbar.Toggle aria-controls="dropdown-navbar" />
     <Navbar.Collapse id="dropdown-navbar">
       <Nav className="flex-column">
@@ -16,7 +18,7 @@ const MainNav = () => (
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link as={Link} to="/menu">
+          <Nav.Link as={Link} to="/menus">
             Menus
           </Nav.Link>
         </Nav.Item>
@@ -36,7 +38,7 @@ const MainNav = () => (
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link as={Link} to="/Reserve">
+          <Nav.Link as={Link} to="/reserve">
             Reseve
           </Nav.Link>
         </Nav.Item>

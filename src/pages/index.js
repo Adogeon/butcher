@@ -47,7 +47,7 @@ const IndexPage = ({ data }) => {
           </div>
         </div>
       </div>
-      <div className="container-md pb-5">
+      <div className="container-md">
         <div className="row justify-content-between">
           <div className="col-5">
             <StaticImage src="../images/outsidesitting.jpg" height={400} />
