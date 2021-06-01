@@ -1,10 +1,10 @@
 import * as React from "react"
 import { Link } from "gatsby"
 
-import { Nav, Navbar } from "react-bootstrap"
+import { Nav, Navbar, Button } from "react-bootstrap"
 import "./MainNav.scss"
 
-const MainNav = () => (
+const MainNav = ({handleReserveModal}) => (
   <Navbar bg="info" variant="dark" expand="md" className={"sidebar"}>
     <Navbar.Brand as={Link} to="/">
       Butcher
@@ -38,9 +38,9 @@ const MainNav = () => (
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link as={Link} to="/reserve">
-            Reseve
-          </Nav.Link>
+          <Button onClicke={handleReserveModal}>
+            Reserve
+          </Button>
         </Nav.Item>
       </Nav>
     </Navbar.Collapse>

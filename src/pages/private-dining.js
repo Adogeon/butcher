@@ -2,12 +2,13 @@ import * as React from "react"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Header from "../components/Header"
 
 const PrivateDiningPage = () => (
   <Layout>
     <Seo title="Private Dining" />
-    <h1>Private Dining placeholder</h1>
-    <article>
+    <Header>Private Dining</Header>
+    <div class="container-md fs-6 my-3">
       <p>
         At Butcher’s Cut, our private wine cellar seats up to forty people
         comfortably with the luxury of at-table service and an in-house
@@ -46,7 +47,7 @@ const PrivateDiningPage = () => (
         <li>Hot Coffee Station</li>
         <li>Rental Fees</li>
       </ul>
-    </article>
+    </div>
   </Layout>
 )
 
