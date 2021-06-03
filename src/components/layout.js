@@ -26,8 +26,8 @@ const Layout = ({ children }) => {
         backdrop="static"
         keyboard={false}
       >
-        <Modal.Header closeButton>
-          <Modal.Title>Book your table</Modal.Title>
+        <Modal.Header>
+          <Modal.Title className=''>Reservations</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Form>
@@ -48,11 +48,11 @@ const Layout = ({ children }) => {
             </Form.Group>
             <Form.Group controlId="date">
               <Form.Label>Date:</Form.Label>
-              <Form.Control as="date"></Form.Control>
+              <Form.Control type="date"></Form.Control>
             </Form.Group>
             <Form.Group controlId="time">
               <Form.Label>Time:</Form.Label>
-              <Form.Control as="time"></Form.Control>
+              <Form.Control type="time"></Form.Control>
             </Form.Group>
           </Form>
         </Modal.Body>

@@ -38,7 +38,7 @@ const MainNav = ({handleReserveModal}) => (
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Button onClicke={handleReserveModal}>
+          <Button onClick={handleReserveModal}>
             Reserve
           </Button>
         </Nav.Item>
